@@ -5,3 +5,4 @@ configuration:
   huaweiyun:
   mail:
     host: smtp.qq.com
+ dev.yml  version=1
