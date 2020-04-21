@@ -3,3 +3,4 @@ spring:
   redis:
 configuration:
   huaweiyun:
+ prod.yml  version=1
