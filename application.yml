@@ -1,0 +1,20 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: cc-cms
+  profiles:
+    active: dev
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8888/eureka
+logging:
+  config: classpath:conf/logback-${spring.profiles.active}.xml
+mybatis:
+  mapperLocations: classpath:mapper/*Mapper.xml
+  type-aliases-package: net.cc.cms.domain.entity
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

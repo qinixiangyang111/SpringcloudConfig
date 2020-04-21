@@ -1,0 +1,7 @@
+spring:
+  datasource:
+  redis:
+configuration:
+  huaweiyun:
+  mail:
+    host: smtp.qq.com
